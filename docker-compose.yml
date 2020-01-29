@@ -20,3 +20,8 @@ services:
     volumes:
       - .:/var/www/html
     restart: always
+    environment:
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+      MYSQL_HOST: db
