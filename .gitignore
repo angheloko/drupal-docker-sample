@@ -23,3 +23,6 @@
 
 # Ignore data directory since this contains local DB data.
 /data
+
+# Ignore local docker-compose.yml
+docker-compose.yml
