@@ -25,7 +25,12 @@ Run `docker-compose up`
     ```shell script
     $ docker exec -it <container-name> /bin/bash
     ```
-3. Once inside the container, install Drupal using `drush`:
+3. Once inside the container, you should see yourself inside the `/var/www/html` directory.
+4. Install dependencies using `composer`:
+    ```shell script
+    $ composer install
+    ```
+4. Install Drupal using `drush`:
     ```shell script
     $ ./vendor/bin/drush si standard --site-name="My Drupal 8 site"
     ```
